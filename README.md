@@ -1,46 +1,56 @@
-# -Bash-Script-Database-Management-System
-Description
-This is a simple Database Management System (DBMS) implemented in Bash. It allows users to:
+# Bash Shell Script Database Management System (DBMS)
 
-Create, list, connect, and delete databases.
-Create, list, delete tables, and perform CRUD operations (Insert, Select, Update, Delete) on tables.
-Features
-Create and manage multiple databases
-CRUD operations on tables
-Simple file-based storage
-How to Use
-Clone the repository:
-bash
-Copy
-Edit
-git clone https://github.com/your-username/repository-name.git
-cd repository-name
-Make the script executable:
-bash
-Copy
-Edit
-chmod +x dbms.sh
-Run the script:
-bash
-Copy
-Edit
-./dbms.sh
-Structure
-bash
-Copy
-Edit
-/databases/  
-  ├── db1/  
-  │   ├── table1  
-  │   ├── table2  
-  ├── db2/  
-  ├── ...
-Example Commands
-Create a Database → Enter option 1 and provide a database name.
-Create a Table → Enter option 3 (Connect to DB) → Choose 1 → Provide a table name and column names.
-Insert Data → Choose 4 inside a connected database and enter values.
-Select Data → Choose 5 to view stored records.
-Update/Delete Data → Options 6 and 7 allow modifying or removing specific entries.
-Author
-Ahmed Mohamed Tawab
-Tarek Mohamed
+## Overview
+This project is a simple **Database Management System (DBMS)** implemented using **Bash scripting**. It allows users to create, manage, and manipulate databases and tables in a file-based environment.
+
+## Features
+- **Create and manage databases**
+- **List available databases**
+- **Connect to a database**
+- **Create, list, and delete tables**
+- **Insert, update, and delete records**
+- **Simple query system for selecting and updating data**
+
+## Project Structure
+The script organizes databases as directories and tables as files within those directories. Data records are stored in a text-based format.
+
+## How to Use
+1. **Run the script**
+   ```bash
+   chmod +x dbms.sh
+   ./dbms.sh
+   ```
+2. **Choose an option** from the main menu:
+   - `1) Create Database` - Create a new database.
+   - `2) List Databases` - Show all available databases.
+   - `3) Connect To Database` - Access a database and perform operations.
+   - `4) Drop Database` - Delete a database and its contents.
+   - `5) Exit` - Close the script.
+
+3. **Within a connected database, you can:**
+   - Create a table by specifying column names.
+   - List available tables.
+   - Drop a table.
+   - Insert, update, or delete data records.
+   - Select and view table contents.
+
+## Technologies Used
+- **Bash scripting**
+- **Linux file system (directories and text files)**
+- **Basic command-line operations**
+
+## Future Enhancements
+- Implement SQL-like querying for better usability.
+- Add user authentication for database access.
+- Improve data storage format to handle complex queries.
+
+## Contributors
+- **Ahmed Mohamed Tawab**
+- **Tarek Mohamed**
+
+## License
+This project is open-source and available for use and modification.
+
+---
+Feel free to fork, contribute, and enhance the project!
+
